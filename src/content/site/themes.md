@@ -8,8 +8,8 @@ Personal essays about ownership, patience, compounding, mistakes, and learning t
 
 ## Stock pitches
 
-Company notes rewritten from my raw research into clearer thesis, valuation, risk, and reflection pieces.
+Company notes shaped into thesis, valuation, risk, and reflection pieces.
 
 ## Football
 
-A future space for tactical patterns, player notes, and the emotional side of a game that rewards patience and timing.
+Tactical patterns, player notes, and the emotional side of a game that rewards patience and timing.

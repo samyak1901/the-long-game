@@ -6,7 +6,7 @@ order: 1
 
 # MercadoLibre (MELI)
 
-These are my personal draft notes for the MercadoLibre pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+MercadoLibre is a study in regional execution: marketplace scale, payments, credit, logistics, and advertising reinforcing each other in markets where local knowledge matters.
 
 ## Valuation
 

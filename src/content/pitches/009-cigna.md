@@ -6,7 +6,7 @@ order: 9
 
 # Cigna (CI)
 
-These are my personal draft notes for the Cigna pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Cigna is a note on healthcare scale, PBM risk, multiple compression, and whether a painful transition can make future cash flows more understandable rather than less.
 
 ## Valuation
 

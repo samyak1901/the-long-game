@@ -6,7 +6,7 @@ order: 8
 
 # PayPal (PYPL)
 
-These are my personal draft notes for the PayPal pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+PayPal is a turnaround question: whether a scaled, profitable payments business can refocus on branded checkout, Venmo, margins, and capital returns after years of poor narrative.
 
 ## Valuation
 

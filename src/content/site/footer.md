@@ -2,4 +2,4 @@
 title: The Long Game
 ---
 
-Personal notes on patience, patterns, and compounding.
+Notes on patience, patterns, and compounding.

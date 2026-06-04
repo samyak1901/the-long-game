@@ -4,6 +4,6 @@ primaryAction: Start reading
 secondaryAction: My framework
 ---
 
-# Notes on investing, compounding, football, and the long game behind better decisions.
+# Investing notes, stock research, and the occasional football thought.
 
-This is a separate home for the things I keep thinking about after work: why businesses compound, how incentives shape outcomes, what makes a stock interesting, and why football still feels like strategy with a heartbeat.
+I write to make my thinking sharper: why businesses compound, how incentives shape outcomes, what makes a stock interesting, and why football still feels like strategy with a heartbeat.

@@ -6,7 +6,7 @@ order: 6
 
 # Pinduoduo (PDD)
 
-These are my personal draft notes for the Pinduoduo pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Pinduoduo is the hardest kind of value idea: statistically cheap, operationally impressive, and still difficult because jurisdiction, disclosure, and trust all carry a discount.
 
 ## Valuation
 

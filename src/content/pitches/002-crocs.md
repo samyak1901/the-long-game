@@ -6,7 +6,7 @@ order: 2
 
 # Crocs (CROX)
 
-These are my personal draft notes for the Crocs pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Crocs is a question of perception versus economics: a brand the market doubts, but a business with unusual margins, cash generation, and buyback capacity.
 
 ValuationCurrent Price: $97.98 (Nov 2024)Forward P/E: ~7.3x (vs industry 15–18x) → clear relative undervaluationEV/EBITDA: ~7x (vs comps 10–12x)Fair Value (Relative): $130–160 per share5-Year Target (Base Case): $180–200/shareAssumptions: 4–5% revenue CAGR, stable margins, EPS growth 5–7%Implied return: 13–15% CAGR over 5 yearsPEG Ratio: ~0.5x (EPS growth vs P/E multiple), suggests undervaluation even with modest growth
 

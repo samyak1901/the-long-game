@@ -6,7 +6,7 @@ order: 4
 
 # Evolution AB (EVVTY)
 
-These are my personal draft notes for the Evolution AB pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Evolution is a high-margin business with real structural advantages, but also a reminder that regulation, geography, and operational shocks can matter as much as headline margins.
 
 ValuationMarket Cap: $15.95B EV: $15.2B Shares: 206.56M NTM P/E: 12.7x EV/FCF: 12.3x (~8% FCF yield)
 

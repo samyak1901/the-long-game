@@ -6,7 +6,7 @@ order: 3
 
 # Alphabet (GOOG)
 
-These are my personal draft notes for the Alphabet pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Alphabet is a note on distribution, intent, and patience: a dominant advertising business surrounded by products that still have room to monetise more deeply.
 
 ## Valuation
 

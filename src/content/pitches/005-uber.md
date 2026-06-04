@@ -6,7 +6,7 @@ order: 5
 
 # Uber (UBER)
 
-These are my personal draft notes for the Uber pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Uber is a platform thesis: mobility, delivery, subscriptions, ads, and autonomous risk all meeting in one question about whether demand aggregation is the durable layer.
 
 ## Valuation
 

@@ -6,7 +6,7 @@ order: 7
 
 # Centene (CNC)
 
-These are my personal draft notes for the Centene pitch. The aim is to turn the raw thesis into a clearer article covering the business, valuation, upside, risks, and what I learned.
+Centene is a distressed healthcare note about repricing, political risk, margin recovery, and whether temporary pain is being valued as permanent impairment.
 
 ## Valuation
 

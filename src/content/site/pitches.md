@@ -3,4 +3,4 @@ label: Stock pitch backlog
 title: The notes I want to turn into polished writeups.
 ---
 
-These are personal research notes, not recommendations. Each future post will include what I liked, what could go wrong, and what I learned.
+Research notes, not recommendations. Each company note tries to answer three questions: what is the business, why might the market be wrong, and what could break the thesis?
