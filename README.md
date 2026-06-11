@@ -1,28 +1,76 @@
 # The Long Game
 
-A personal writing site by Samyak Jain for notes on investing, compounding, stock research, football, and long-term decision-making.
+Personal writing by Samyak Jain, investing notes, stock research, and the occasional football thought. Built with [VitePress](https://vitepress.dev).
 
-## Content Editing
+## Writing a new post
 
-All written content lives in Markdown files under `src/content/`:
+Every page is a plain Markdown file. **Add a file → it's published**: it appears in the sidebar automatically (sorted by the `order` frontmatter field).
 
-- `src/content/site/` controls homepage sections such as the hero, framework, football note, disclaimer, and footer.
-- `src/content/essays/` controls the essay roadmap cards.
-- `src/content/pitches/` controls the stock-pitch backlog cards.
+- **Essays** live in `essays/`
+- **Stock pitches** live in `pitches/`
+- **Football** lives in `football/`
 
-The React code handles layout only; edit Markdown files to change wording.
+### Frontmatter
 
-## Run Locally
+Essays:
+
+```markdown
+---
+title: "Why I Started Investing"
+category: "Investing"      # shown as a tag on cards
+kicker: "Curiosity, ownership, and time"
+status: "Drafting"          # optional badge
+readTime: "7 min"
+order: 1                     # controls sidebar + list order
+---
+
+# Why I Started Investing
+
+Your prose here…
+```
+
+Pitches:
+
+```markdown
+---
+title: "MercadoLibre"
+ticker: "MELI"
+order: 1
+---
+
+# MercadoLibre (MELI)
+
+…
+```
+
+Markdown is rendered by markdown-it, so tables, code blocks, footnotes, images, and `:emoji:` all work.
+
+## Local development
 
 ```bash
 npm install
-npm run dev
+npm run dev       # local dev server with hot reload
+npm run build     # production build → .vitepress/dist
+npm run preview   # preview the production build
 ```
 
-## Build
+## Structure
 
-```bash
-npm run build
+```
+.vitepress/
+  config.mts              # nav, auto-generated sidebars, search, theme config
+  theme/
+    index.ts              # extends the default theme, registers components
+    custom.css            # plain editorial styling (serif headings, rust accent)
+    essays.data.ts        # content loader → essay list
+    pitches.data.ts       # content loader → pitch list
+    components/           # BlogHome, PostList, PitchList
+index.md                  # blog home
+essays/  pitches/  football/  about.md
+public/                   # static assets (favicon)
 ```
 
-The Vite `base` is set to `/the-long-game/` for GitHub Pages hosting at `https://samyak1901.github.io/the-long-game/`.
+## Deployment
+
+Pushing to `main` deploys to GitHub Pages via `.github/workflows/deploy.yml`.
+The site is served under the `/the-long-game/` base path.
