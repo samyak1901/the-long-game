@@ -1,0 +1,363 @@
+/* ---------------------------------------------------------------------------
+   The Long Game, plain, editorial blog styling over VitePress default theme.
+   --------------------------------------------------------------------------- */
+
+:root {
+  /* Warm rust accent in place of VitePress blue. */
+  --vp-c-brand-1: #9a4a1d;
+  --vp-c-brand-2: #b4530b;
+  --vp-c-brand-3: #8a4019;
+  --vp-c-brand-soft: #f4ece6;
+
+  /* Fraunces for display headings, Newsreader for reading body. */
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+
+  /* Slightly narrower, more book-like reading column. */
+  --vp-layout-max-width: 1180px;
+  --vp-content-container-max-width: 720px;
+}
+
+.dark {
+  --vp-c-brand-1: #d98a5c;
+  --vp-c-brand-2: #e09a70;
+  --vp-c-brand-3: #c2764a;
+  --vp-c-brand-soft: #3a2a20;
+}
+
+/* Display headings throughout, the editorial signature. */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.VPHero .name,
+.VPHero .text {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.vp-doc h2 {
+  margin-top: 2.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 1.5rem;
+}
+
+.vp-doc h3 { font-size: 1.2rem; }
+
+/* Roomier, serif reading body for article prose. */
+.vp-doc p,
+.vp-doc li {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.78;
+}
+
+.brand-serif,
+.VPNavBarTitle .title {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* ---- Blog home ---------------------------------------------------------- */
+
+.blog-home {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1rem 24px 4rem;
+}
+
+.blog-home .hero {
+  padding: 2.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.blog-home .eyebrow {
+  color: var(--vp-c-brand-1);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.blog-home h1 {
+  margin: 1rem 0 0;
+  max-width: 18ch;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--vp-c-text-1);
+}
+
+.blog-home .lede {
+  margin-top: 1.4rem;
+  color: var(--vp-c-text-2);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.home-block { padding: 2.4rem 0; border-bottom: 1px solid var(--vp-c-divider); }
+
+.home-block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.home-block-head h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.55rem;
+  letter-spacing: -0.02em;
+}
+
+.home-block-head a {
+  color: var(--vp-c-brand-1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ---- Hero actions ------------------------------------------------------- */
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.6rem; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 1.2rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 9px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.btn-primary { background: var(--vp-c-brand-1); color: #fff; border-color: var(--vp-c-brand-1); }
+.btn-primary:hover { background: var(--vp-c-brand-2); border-color: var(--vp-c-brand-2); }
+.btn-ghost { color: var(--vp-c-text-1); }
+.btn-ghost:hover { border-color: var(--vp-c-text-2); color: var(--vp-c-brand-1); }
+
+.hero-stats {
+  margin-top: 1.1rem;
+  color: var(--vp-c-text-3);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* ---- Featured essay ----------------------------------------------------- */
+
+.featured {
+  display: block;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  padding: 1.6rem 1.8rem;
+  transition: border-color 0.15s ease;
+}
+.featured:hover { border-color: var(--vp-c-brand-1); }
+
+.featured h3 {
+  margin: 0.6rem 0 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--vp-c-text-1);
+}
+
+.featured-kicker {
+  margin: 0.5rem 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--vp-c-text-2);
+}
+
+.featured-excerpt {
+  margin: 0.75rem 0 0;
+  font-family: var(--serif);
+  font-size: 1.06rem;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--vp-c-brand-1);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.home-block .post-list { margin-top: 1.4rem; }
+
+/* ---- Pitch grid (home) -------------------------------------------------- */
+
+.pitch-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.pitch-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  height: 100%;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  transition: border-color 0.15s ease;
+}
+.pitch-grid a:hover { border-color: var(--vp-c-brand-1); }
+
+.pitch-grid .ticker {
+  color: var(--vp-c-brand-1);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.pitch-grid strong {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: var(--vp-c-text-1);
+}
+.pitch-grid .excerpt { color: var(--vp-c-text-2); font-size: 0.9rem; line-height: 1.5; }
+
+/* ---- Footer cards (Football / About) ------------------------------------ */
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 2.6rem 0 1rem;
+}
+
+.home-card {
+  display: block;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  padding: 1.5rem 1.6rem;
+  transition: border-color 0.15s ease;
+}
+.home-card:hover { border-color: var(--vp-c-brand-1); }
+
+.card-label {
+  display: inline-block;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--vp-c-text-1);
+}
+.home-card p {
+  margin: 0.5rem 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .pitch-grid,
+  .home-cards { grid-template-columns: 1fr; }
+}
+
+/* ---- Shared lists (home + index pages) ---------------------------------- */
+
+.post-list,
+.pitch-list { list-style: none; margin: 0; padding: 0; }
+
+.post-list li { border-top: 1px solid var(--vp-c-divider); }
+.post-list li:last-child { border-bottom: 1px solid var(--vp-c-divider); }
+
+.post-list a { display: block; padding: 1.3rem 0; transition: opacity 0.15s ease; }
+.post-list a:hover { opacity: 0.6; }
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--vp-c-text-3);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post-meta .tag {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.post-list h3 {
+  margin: 0.5rem 0 0;
+  border: 0;
+  padding: 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -0.015em;
+  color: var(--vp-c-text-1);
+}
+
+.post-list p {
+  margin: 0.35rem 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.pitch-list li { border-top: 1px solid var(--vp-c-divider); }
+.pitch-list li:last-child { border-bottom: 1px solid var(--vp-c-divider); }
+
+.pitch-list a {
+  display: grid;
+  grid-template-columns: 72px minmax(110px, 0.5fr) 1fr auto;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem 0;
+  transition: opacity 0.15s ease;
+}
+.pitch-list a:hover { opacity: 0.6; }
+.pitch-list a:hover .arrow { color: var(--vp-c-brand-1); }
+
+.pitch-list .ticker {
+  color: var(--vp-c-brand-1);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pitch-list strong {
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.pitch-list .excerpt { color: var(--vp-c-text-2); font-size: 0.92rem; line-height: 1.5; }
+.pitch-list .arrow { color: var(--vp-c-text-3); }
+
+@media (max-width: 640px) {
+  .pitch-list a { grid-template-columns: 56px 1fr; gap: 0.4rem 0.8rem; }
+  .pitch-list .excerpt { grid-column: 2; }
+  .pitch-list .arrow { display: none; }
+}
